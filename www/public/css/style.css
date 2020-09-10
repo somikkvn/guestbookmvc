@@ -1,0 +1,49 @@
+﻿h1{
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+}
+
+table{
+    margin: 15px;
+
+}
+
+a{
+    cursor: pointer;
+}
+
+.box {
+    overflow: hidden;
+    height: 100px;
+    width: 300px;
+}
+
+.box__in {
+    -webkit-column-width: 150px;
+    -moz-column-width: 150px;
+    column-width: 150px;
+    height: 100%;
+}
+
+footer {
+    border: solid 1px silver;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.error{
+    color:  red;
+    font-weight: bold;
+}
+
+.success{
+    color:  green;
+    font-weight: bold;
+}
+
+

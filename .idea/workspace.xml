@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b0c2e0b3-1893-4c0c-bef7-25679c0e0558" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="ProjectId" id="1gdh48cwVyDvmUvlvGFl6NxQKLn" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\OpenServer\domains\framework.loc\www\application\views\contact" />
+      <recent name="E:\OpenServer\domains\framework.loc\www\application\views\login" />
+      <recent name="E:\OpenServer\domains\framework.loc\www\application\views\guest" />
+      <recent name="E:\OpenServer\domains\framework.loc\www\application\views\main" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\OpenServer\domains\framework.loc\www\application\views\guest" />
+      <recent name="E:\OpenServer\domains\framework.loc\www\application\models" />
+      <recent name="E:\OpenServer\domains\framework.loc\www\application\controllers" />
+      <recent name="E:\OpenServer\domains\framework.loc\www\application\views" />
+      <recent name="E:\OpenServer\domains\framework.loc\www\public\css" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b0c2e0b3-1893-4c0c-bef7-25679c0e0558" name="Default Changelist" comment="" />
+      <created>1598450183682</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1598450183682</updated>
+      <workItem from="1598450184865" duration="828000" />
+      <workItem from="1598451164328" duration="2268000" />
+      <workItem from="1598512087120" duration="14656000" />
+      <workItem from="1598526901804" duration="2243000" />
+      <workItem from="1598529859754" duration="10022000" />
+      <workItem from="1598554950439" duration="5779000" />
+      <workItem from="1598597644271" duration="9095000" />
+      <workItem from="1598608868625" duration="5567000" />
+      <workItem from="1598614719062" duration="6826000" />
+      <workItem from="1598621792175" duration="5022000" />
+      <workItem from="1598648941585" duration="1177000" />
+      <workItem from="1598691856046" duration="1810000" />
+      <workItem from="1598711704145" duration="2650000" />
+      <workItem from="1598729712969" duration="4462000" />
+      <workItem from="1598770338913" duration="25126000" />
+      <workItem from="1598857256848" duration="1844000" />
+      <workItem from="1598862619443" duration="10521000" />
+      <workItem from="1598883429556" duration="2376000" />
+      <workItem from="1598889799197" duration="7943000" />
+      <workItem from="1598905503515" duration="1121000" />
+      <workItem from="1598943472093" duration="27403000" />
+      <workItem from="1598979519469" duration="1940000" />
+      <workItem from="1599029320713" duration="12237000" />
+      <workItem from="1599042984300" duration="15106000" />
+      <workItem from="1599081085976" duration="163000" />
+      <workItem from="1599115680842" duration="25769000" />
+      <workItem from="1599156613626" duration="5364000" />
+      <workItem from="1599163636646" duration="20000" />
+      <workItem from="1599202566162" duration="12978000" />
+      <workItem from="1599216002822" duration="148000" />
+      <workItem from="1599216200795" duration="1926000" />
+      <workItem from="1599218476699" duration="12256000" />
+      <workItem from="1599418939311" duration="1306000" />
+      <workItem from="1599461063551" duration="22437000" />
+      <workItem from="1599496460038" duration="10276000" />
+      <workItem from="1599547644928" duration="29433000" />
+      <workItem from="1599595597004" duration="43000" />
+      <workItem from="1599634271850" duration="3000" />
+      <workItem from="1599634284720" duration="29190000" />
+      <workItem from="1599682997842" duration="2490000" />
+      <workItem from="1599685943351" duration="339000" />
+      <workItem from="1599720398368" duration="6366000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="396" y="165" key="#Notifications" timestamp="1598691944032">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="396" y="165" key="#Notifications/0.0.1280.680@0.0.1280.680" timestamp="1598691944032" />
+    <state x="454" y="122" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1598523989156">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="454" y="122" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1280.680@0.0.1280.680" timestamp="1598523989156" />
+    <state x="371" y="88" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1598512541842">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="371" y="88" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1598512541842" />
+    <state x="371" y="96" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1599464615739">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="371" y="96" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.680@0.0.1280.680" timestamp="1599464615739" />
+    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1599595638481">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1599595638481" />
+    <state x="365" y="64" key="NewPhpClassDialog" timestamp="1599463932446">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="365" y="64" key="NewPhpClassDialog/0.0.1280.680@0.0.1280.680" timestamp="1599463932446" />
+    <state x="477" y="264" key="NewPhpFileDialog" timestamp="1599485725616">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="477" y="264" key="NewPhpFileDialog/0.0.1280.680@0.0.1280.680" timestamp="1599485725616" />
+    <state x="142" y="0" key="SettingsEditor" timestamp="1599685264383">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1599685264383" />
+    <state x="217" y="56" width="587" height="624" key="find.popup" timestamp="1599661659330">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="217" y="56" width="587" height="624" key="find.popup/0.0.1280.680@0.0.1280.680" timestamp="1599661659330" />
+    <state x="297" y="151" key="run.anything.popup" timestamp="1599221744143">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="297" y="151" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1599221744143" />
+  </component>
+</project>
