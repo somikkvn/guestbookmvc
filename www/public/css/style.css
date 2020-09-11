@@ -46,4 +46,10 @@ footer {
     font-weight: bold;
 }
 
-
+.alert {
+    padding: 1px;
+    border: 1px solid #d6e9c6;
+    border-radius: 7px;
+    color: #c0c2c2;
+    background: radial-gradient(40% 50%, #e9f7f7, #c0c2c2);
+}
