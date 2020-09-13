@@ -11,17 +11,20 @@
     <link rel="stylesheet" type="text/css" href="/public/css/bootstrap.min.css"/>
     <link rel="stylesheet" type="text/css" href="/public/css/bootstrap-theme.min.css"/>
     <link rel="stylesheet" type="text/css" href="/public/css/style.css"/>
-
+    <script src="/public/js/jquery-3.1.1.min.js"></script>
+    <script src="/public/js/myscript.js"></script>
+    <script src="/public/js/bootstrap.min.js"></script>
+    <script src="/public/js/bootstrap.js"></script>
 </head>
 <body>
 <header>
-    <nav role="navigation" class="navbar navbar-default">
+    <nav class="navbar navbar-default">
         <div class="navbar-header">
             <a class="navbar-brand">
                 <h1>MVC Guest book</h1>
             </a>
         </div>
-        <div id="navbarCollapse" class="collapse navbar-collapse">
+        <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
                 <li>
                     <a href="http://<?php echo $_SERVER['HTTP_HOST']; ?>">The task</a>
@@ -53,10 +56,7 @@
 <footer>
     <a> &copy; Vasyl Kozlovskyi 2020</a>
 </footer>
-<script src="/public/js/jquery-3.1.1.min.js"></script>
-<script src="/public/js/bootstrap.min.js"></script>
-<script src="/public/js/bootstrap.js"></script>
-<script src="/public/js/myscript.js"></script>
+
 </body>
 </html>
 

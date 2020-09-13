@@ -1,4 +1,5 @@
 <pre>
+      <img align="right" src="/public/img/1.jpg" height="200">
      Create a guestbook that consists of the following elements:
 
      Logins, registration, pages for adding messages.
@@ -8,7 +9,9 @@
      List of all reviews up to three nesting levels.
 
      Use mysql as storage.
+
 </pre>
+
 <!--    Создать гостевую книгу, состоящую из:-->
 <!---->
 <!--    Логинки, регистрации, страницы для добавления сообщений.-->

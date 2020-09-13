@@ -57,7 +57,7 @@
 <?php
 if (!empty($items)) {
     foreach ($items as $item) { ?>
-
+        <img align="right" src="/public/img/4.jpg" height="50">
         <?php echo "№" . ' ' . $item['comment_id']; ?>
         <?php echo $item['author']; ?><br>
         <?php echo "Comment:" . ' ' . $item['text']; ?>
@@ -84,8 +84,8 @@ if (!empty($items)) {
         <?php
         if (!empty($item['childrens'])) {
             foreach ($item['childrens'] as $item2) { ?>
+                <img align="right" src="/public/img/3.jpg" height="50">
                 <ul>
-
                     <?php echo "№" . ' ' . $item2['comment_id']; ?>
                     <?php echo $item2['author']; ?><br>
                     <?php echo "Comment:" . ' ' . $item2['text']; ?>

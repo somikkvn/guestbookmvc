@@ -9,6 +9,9 @@ class Login extends  Model
 
     public function loginAction($regEmail, $regPass)
     {
+
+//        var_dump($_POST);
+//        die;
         //создаем два массива для хранения в них данных в случае успеха и ошибок
         $errors = [];
         $success = [];
