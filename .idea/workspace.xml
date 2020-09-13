@@ -19,20 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0c2e0b3-1893-4c0c-bef7-25679c0e0558" name="Default Changelist" comment="2commit">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/application/controllers/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/www/application/controllers/LoginController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/application/controllers/MainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/www/application/controllers/MainController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/application/models/Login.php" beforeDir="false" afterPath="$PROJECT_DIR$/www/application/models/Login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/application/models/Main.php" beforeDir="false" afterPath="$PROJECT_DIR$/www/application/models/Main.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/application/views/guest/guestbook.php" beforeDir="false" afterPath="$PROJECT_DIR$/www/application/views/guest/guestbook.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/application/views/layouts/default.php" beforeDir="false" afterPath="$PROJECT_DIR$/www/application/views/layouts/default.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/application/views/login/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/www/application/views/login/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/application/views/main/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/www/application/views/main/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/application/views/main/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/www/application/views/main/register.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/public/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/public/js/myscript.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/public/js/myscript.js" afterDir="false" />
-    </list>
+    <list default="true" id="b0c2e0b3-1893-4c0c-bef7-25679c0e0558" name="Default Changelist" comment="3commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -129,8 +116,16 @@
       <workItem from="1599928242736" duration="14221000" />
       <workItem from="1599944979112" duration="434000" />
       <workItem from="1599992296532" duration="15000" />
-      <workItem from="1600009174619" duration="709000" />
+      <workItem from="1600009174619" duration="997000" />
     </task>
+    <task id="LOCAL-00001" summary="3commit">
+      <created>1600017249081</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1600017249081</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -150,7 +145,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="2commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="2commit" />
+    <MESSAGE value="3commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="3commit" />
   </component>
   <component name="WindowStateProjectService">
     <state x="396" y="165" key="#Notifications" timestamp="1598691944032">
@@ -169,10 +165,18 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="371" y="96" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.680@0.0.1280.680" timestamp="1599464615739" />
-    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1599992304241">
+    <state x="121" y="51" key="DiffContextDialog" timestamp="1600017272095">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1599992304241" />
+    <state x="121" y="51" key="DiffContextDialog/0.0.1280.680@0.0.1280.680" timestamp="1600017272095" />
+    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1600017061808">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1600017061808" />
+    <state x="509" y="239" key="Github.ShareDialog" timestamp="1600017161007">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="509" y="239" key="Github.ShareDialog/0.0.1280.680@0.0.1280.680" timestamp="1600017161007" />
     <state x="365" y="64" key="NewPhpClassDialog" timestamp="1599463932446">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -185,14 +189,18 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1599685264383" />
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1599824527192">
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1600017343856">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1599824527192" />
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1600017343856" />
     <state x="217" y="56" width="587" height="624" key="find.popup" timestamp="1599935192998">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="217" y="56" width="587" height="624" key="find.popup/0.0.1280.680@0.0.1280.680" timestamp="1599935192998" />
+    <state x="427" y="232" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1600017336936">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="427" y="232" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1280.680@0.0.1280.680" timestamp="1600017336936" />
     <state x="297" y="151" key="run.anything.popup" timestamp="1599221744143">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
