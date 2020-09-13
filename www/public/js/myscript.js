@@ -14,9 +14,10 @@ $(document).ready(function (){
                 data: ({username: $("#username").val(), password: $("#password").val(), email: $("#email").val(), first_name: $("#first_name").val(), last_name: $("#last_name").val(), confirm_password: $("#confirm_password").val()}),
                 dataType: "html",
                 success: function (data) {
-                    window.location.href = "/login";
+                    // window.location.href = "/login";
                     // window.open('/login');
-                }else{
+                },
+                error : function(error) {
                     window.location.href = "/register";
                 }
             });
@@ -31,7 +32,8 @@ $(document).ready(function (){
             success: function (data) {
                 // console.log ('Hi');
                 window.location.href = "/guestbook";
-            }else{
+            },
+            error : function(error) {
                 window.location.href = "/login";
             }
         });

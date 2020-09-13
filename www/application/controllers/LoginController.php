@@ -13,6 +13,7 @@ class LoginController extends Controller {
             $regEmail = $_POST['email'];
             $resultModel=$this->model->loginAction($regEmail, $_POST['password']);
 //            var_dump($_POST);
+//            die;
              if ($resultModel['success'] == true) {
                  //если пользователь авторизовался присваиваем сессию и перенаправляем
                  $_SESSION['id'] = $resultModel['user_id'];
