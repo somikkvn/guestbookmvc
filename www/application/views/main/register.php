@@ -1,13 +1,17 @@
-<div style="color: red">
-<?php
-if($_SESSION['error_username']!=""){echo $_SESSION['error_username']."<br>";}
-if($_SESSION['error_password']!=""){echo $_SESSION['error_password']."<br>";}
-?>
+<div id="err" style="color: red; display: none">
+    <p class="error_message"></p>
+    <?php
+    if($_SESSION['error_username']!=""){echo $_SESSION['error_username']."<br>";}
+    if($_SESSION['error_password']!=""){echo $_SESSION['error_password']."<br>";}
+    if($_SESSION['error_first_name']!=""){echo $_SESSION['error_first_name']."<br>";}
+    if($_SESSION['error_last_name']!=""){echo $_SESSION['error_last_name']."<br>";}
+    if($_SESSION['error_email']!=""){echo $_SESSION['error_email']."<br>";}
+    ?>
 </div>
 <div align="center">
     <h2>Registration page</h2>
     <div class="form-group">
-        <div style="color: red">
+<!--        <div style="color: red">-->
             <?php if (!empty($error)) { ?>
                 <div class="row error">
                     <ul>
@@ -29,6 +33,7 @@ if($_SESSION['error_password']!=""){echo $_SESSION['error_password']."<br>";}
             </div>
             <div class="col-sm-4"></div>
         </div>
+        <div id="err1" style="color: red"></div>
         <br>
         <div class="row">
             <div class="col-sm-4"></div>
@@ -67,8 +72,9 @@ if($_SESSION['error_password']!=""){echo $_SESSION['error_password']."<br>";}
             </div>
             <div class="col-sm-4"></div>
         </div>
+        <div id="err2" style="color: red"></div>
         <br>
-        <div class="row">
+            <div class="row">
             <div class="col-sm-4"></div>
             <div class="col-sm">
                 <input id="confirm_password" class="form-control" type="password" name="confirm_password" required=""
@@ -76,7 +82,8 @@ if($_SESSION['error_password']!=""){echo $_SESSION['error_password']."<br>";}
             </div>
             <div class="col-sm-4"></div>
         </div>
-        <br>
+        <div id="err3" style="color: red"></div>
+<!--        <br>-->
         <div>
             <br>
             <input id="send" class="btn btn-default" type="button" name="submit" class="btn btn-secondary"
@@ -88,6 +95,6 @@ if($_SESSION['error_password']!=""){echo $_SESSION['error_password']."<br>";}
             </p>
         </div>
 </div>
-</div>
-</div>
+<!--</div>-->
+<!--</div>-->
 

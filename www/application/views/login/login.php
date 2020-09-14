@@ -1,3 +1,10 @@
+<div id="err" style="color: red; display: none">
+    <p class="error_message"></p>
+    <?php
+    if($_SESSION['error_password']!=""){echo $_SESSION['error_password']."<br>";}
+    if($_SESSION['error_email']!=""){echo $_SESSION['error_email']."<br>";}
+    ?>
+</div>
 <div>
     <form align="center">
         <h2 class="text-secondary">Login page</h2><br>
@@ -31,9 +38,10 @@
             </div>
             <div class="col-sm-4"></div>
         </div>
+        <div id="err2" style="color: red"></div>
         <div>
             <br>
-            <input id="send2" class="btn btn-default" type="submit" name="submit2" class="btn btn-secondary" value="Sign in"/>
+            <input id="send2" class="btn btn-default" type="button" name="send2" class="btn btn-secondary" value="Sign in"/>
         </div>
         <p>
             <br>
