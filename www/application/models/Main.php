@@ -11,15 +11,15 @@ class Main extends  Model{
 
     public function registerAction($regUser, $regEmail, $regPass, $regFirst, $regLast)
     {
-        $errors = [];
+        $errors = []; $error=0;
         $success = [];
 
-        if (strlen($regUser)>30){$errors [] = "Username does not fit";}
-        if (strlen($regEmail)>30){$errors [] = "Email does not fit";}
-        if (strlen($_POST['password'])<6){$errors [] = "Password must be min six characters";}
-        if (strlen($regFirst)>50){$errors [] = "Name does not fit";}
-        if (strlen($regLast)>50){$errors [] = "Surname does not fit";}
-        if ($_POST['password'] !== $_POST['confirm_password']){$errors [] = "Password mismatch";}
+        if (strlen($regUser)>30){$_SESSION['error_username'] = "Username does not fit"; $errors [] = "Username does not fit";}
+        if (strlen($regEmail)>30){$_SESSION['error_email'] = "Email does not fit";}
+        if (strlen($_POST['password'])<6){$_SESSION['error_password'] = "Password must be min six characters";}
+        if (strlen($regFirst)>50){$_SESSION['error_first_name'] = "Name does not fit";}
+        if (strlen($regLast)>50){$_SESSION['error_last_name'] = "Surname does not fit";}
+        if ($_POST['password'] !== $_POST['confirm_password']){$_SESSION['error_password'] = "Password mismatch";}
 
         if(empty($errors)){
             $stmt = $this->db->prepare("INSERT INTO users (`username`, `email`, `password`,                 `first_name`, `last_name`)

@@ -28,9 +28,11 @@ class MainController extends Controller
             $result = $this->model->registerAction($regUser, $regEmail, $regPass, $regFirst, $regLast);
             if (!empty($result['error_messange'])) {
                 $data['error'] = $result['error_messange'];
+               return false;
             }
             else {
                 header('Location: /login');
+                return true;
             }
         }
         $this->view->render('Регистрация', $data);

@@ -13,15 +13,18 @@
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:guestbookmvc" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0c2e0b3-1893-4c0c-bef7-25679c0e0558" name="Default Changelist" comment="Second commit">
+    <list default="true" id="b0c2e0b3-1893-4c0c-bef7-25679c0e0558" name="Default Changelist" comment="13.09 commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/application/controllers/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/www/application/controllers/LoginController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/application/controllers/MainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/www/application/controllers/MainController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/application/models/Main.php" beforeDir="false" afterPath="$PROJECT_DIR$/www/application/models/Main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/application/views/login/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/www/application/views/login/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/application/views/main/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/www/application/views/main/register.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/www/public/js/myscript.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/public/js/myscript.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -119,7 +122,16 @@
       <workItem from="1599927017832" duration="444000" />
       <workItem from="1599928242736" duration="14221000" />
       <workItem from="1599944979112" duration="434000" />
+      <workItem from="1600066240738" duration="6617000" />
     </task>
+    <task id="LOCAL-00001" summary="13.09 commit">
+      <created>1600029829871</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1600029829871</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -139,7 +151,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="2commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="2commit" />
+    <MESSAGE value="13.09 commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="13.09 commit" />
   </component>
   <component name="WindowStateProjectService">
     <state x="396" y="165" key="#Notifications" timestamp="1598691944032">
@@ -174,10 +187,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1599685264383" />
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1599824527192">
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1600029837776">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1599824527192" />
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1600029837776" />
     <state x="217" y="56" width="587" height="624" key="find.popup" timestamp="1599935192998">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

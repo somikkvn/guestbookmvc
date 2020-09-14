@@ -1,6 +1,12 @@
+<div style="color: red">
+<?php
+if($_SESSION['error_username']!=""){echo $_SESSION['error_username']."<br>";}
+if($_SESSION['error_password']!=""){echo $_SESSION['error_password']."<br>";}
+?>
+</div>
 <div align="center">
     <h2>Registration page</h2>
-    <form action="/register" class="form-group" method="post">
+    <div class="form-group">
         <div style="color: red">
             <?php if (!empty($error)) { ?>
                 <div class="row error">
@@ -73,14 +79,15 @@
         <br>
         <div>
             <br>
-            <input id="submit" class="btn btn-default" type="submit" name="submit" class="btn btn-secondary"
+            <input id="send" class="btn btn-default" type="button" name="submit" class="btn btn-secondary"
                    value="Register"/>
             <p>
+
                 <br>
                 You already have an account? - <a href="\login">Log in!</a>
             </p>
         </div>
 </div>
-</form>
+</div>
 </div>
 

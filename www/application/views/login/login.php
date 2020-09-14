@@ -1,5 +1,5 @@
 <div>
-    <form align="center" action="/login" method="post">
+    <form align="center">
         <h2 class="text-secondary">Login page</h2><br>
         <div style="color: red">
             <?php if (!empty($error)) { ?>
@@ -33,7 +33,7 @@
         </div>
         <div>
             <br>
-            <input id="submit2" class="btn btn-default" type="submit" name="submit2" class="btn btn-secondary" value="Sign in"/>
+            <input id="send2" class="btn btn-default" type="submit" name="submit2" class="btn btn-secondary" value="Sign in"/>
         </div>
         <p>
             <br>
