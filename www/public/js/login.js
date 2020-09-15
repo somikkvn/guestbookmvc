@@ -14,45 +14,20 @@ $(document).ready(function () {
                 dataType: "html",
                 success: function (request2) {
                     if ((request2)) {
-
-                        // $('#send').prepend().load( '/login' );
                         window.location.href = "/guestbook";
-                        //  console.log('cool');
                     } else {
                         $('#err').show();
-                        // $('.error_message').text('111')
-                    }console.log(request2)
+                    }
+                    console.log(request2)
                 }
-
             });
         } else {
             $('#err').show();
-            // $('.error_message').text('111')
         }
     });
 
-
-    // $('#send3').bind("click", function (event) {
-    //     event.preventDefault();
-    //     $.ajax({
-    //         url: '/login',
-    //         type: "POST",
-    //         data: ({email: $("#email").val(), password: $("#password").val()}),
-    //         dataType: "html",
-    //         success: function (request) {
-    //             if ((request)) {
-    //                 // $('#send').prepend().load( '/login' );
-    //                 window.location.href = "/guestbook";
-    //                 //  console.log('cool');
-    //             } else {
-    //                 $('#err').show();
-    //                 // $('.error_message').text('111')
-    //             }
-    //         }
-    //     });
-    // });
     function validation2(request2) {
-        // console.log('validation()')
+        // console.log('validation2()')
         let data = [];
         if (request2.password.length < 6) {
             data.push('Password must be min six characters');

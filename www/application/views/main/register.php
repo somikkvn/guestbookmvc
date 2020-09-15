@@ -1,100 +1,115 @@
 <div id="err" style="color: red; display: none">
     <p class="error_message"></p>
     <?php
-    if($_SESSION['error_username']!=""){echo $_SESSION['error_username']."<br>";}
-    if($_SESSION['error_password']!=""){echo $_SESSION['error_password']."<br>";}
-    if($_SESSION['error_first_name']!=""){echo $_SESSION['error_first_name']."<br>";}
-    if($_SESSION['error_last_name']!=""){echo $_SESSION['error_last_name']."<br>";}
-    if($_SESSION['error_email']!=""){echo $_SESSION['error_email']."<br>";}
+    if ($_SESSION['error_username'] != "") {
+        echo $_SESSION['error_username'] . "<br>";
+    }
+    if ($_SESSION['error_password'] != "") {
+        echo $_SESSION['error_password'] . "<br>";
+    }
+    if ($_SESSION['error_first_name'] != "") {
+        echo $_SESSION['error_first_name'] . "<br>";
+    }
+    if ($_SESSION['error_last_name'] != "") {
+        echo $_SESSION['error_last_name'] . "<br>";
+    }
+    if ($_SESSION['error_email'] != "") {
+        echo $_SESSION['error_email'] . "<br>";
+    }
     ?>
 </div>
 <div align="center">
     <h2>Registration page</h2>
     <div class="form-group">
-<!--        <div style="color: red">-->
-            <?php if (!empty($error)) { ?>
-                <div class="row error">
-                    <ul>
-                        <?php foreach ($error as $item) { ?>
-                            <li><?
-                                echo $item; ?>
-                            </li>
-                        <?php } ?>
-                    </ul>
-                </div>
-            <?php } ?>
-        </div>
-        <!--        <div class="container">-->
-        <div class="row">
-            <div class="col-sm-4"></div>
-            <div class="col-sm">
-                <input id="username" class="form-control" type="text" name="username" required="" placeholder="Username"
-                       value="<?php echo(!empty($_POST['username']) ? $_POST['username'] : ''); ?>"/>
+        <!--        <div style="color: red">-->
+        <?php if (!empty($error)) { ?>
+            <div class="row error">
+                <ul>
+                    <?php foreach ($error as $item) { ?>
+                        <li><?
+                            echo $item; ?>
+                        </li>
+                    <?php } ?>
+                </ul>
             </div>
-            <div class="col-sm-4"></div>
+        <?php } ?>
+    </div>
+    <div class="row">
+        <div class="col-sm-4"></div>
+        <div class="col-sm">
+            <input id="username" class="form-control" type="text" name="username" required="" placeholder="Username"
+                   value="<?php echo(!empty($_POST['username']) ? $_POST['username'] : ''); ?>"/>
         </div>
-        <div id="err1" style="color: red"></div>
-        <br>
-        <div class="row">
-            <div class="col-sm-4"></div>
-            <div class="col-sm">
-                <input id="email" class="form-control" type="email" name="email" required="" placeholder="Email"
-                       value="<?php echo(!empty($_POST['email']) ? $_POST['email'] : ''); ?>"/>
-            </div>
-            <div class="col-sm-4"></div>
+        <div class="col-sm-4"></div>
+    </div>
+    <div id="err1" style="color: red"></div>
+    <input id="err_username" name="err_username" type="hidden" value="" style="color: red"/>
+    <br>
+    <div class="row">
+        <div class="col-sm-4"></div>
+        <div class="col-sm">
+            <input id="email" class="form-control" type="email" name="email" required="" placeholder="Email"
+                   value="<?php echo(!empty($_POST['email']) ? $_POST['email'] : ''); ?>"/>
         </div>
-        <br>
-        <div class="row">
-            <div class="col-sm-4"></div>
-            <div class="col-sm">
-                <input id="first_name" class="form-control" type="text" name="first_name" required="" placeholder="Name"
-                       value="<?php echo(!empty($_POST['first_name']) ? $_POST['first_name'] : ''); ?>"/>
-            </div>
-            <div class="col-sm-4"></div>
+        <div class="col-sm-4"></div>
+    </div>
+    <input id="err_email" name="err_email" type="hidden" value=""/>
+    <div id="err4" style="color: red"></div>
+<!--    --><?php
+//    if ( $_SESSION['error2_email'] != "") {
+//        echo  $_SESSION['error2_email'] . "<br>";
+//    }
+//    ?>
+    <br>
+    <div class="row">
+        <div class="col-sm-4"></div>
+        <div class="col-sm">
+            <input id="first_name" class="form-control" type="text" name="first_name" required="" placeholder="Name"
+                   value="<?php echo(!empty($_POST['first_name']) ? $_POST['first_name'] : ''); ?>"/>
         </div>
-        <br>
-        <div class="row">
-            <div class="col-sm-4"></div>
-            <div class="col-sm">
-                <input id="last_name" class="form-control" type="text" name="last_name" required=""
-                       placeholder="Surname"
-                       value="<?php echo(!empty($_POST['last_name']) ? $_POST['last_name'] : ''); ?>"/>
-            </div>
-            <div class="col-sm-4"></div>
+        <div class="col-sm-4"></div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-sm-4"></div>
+        <div class="col-sm">
+            <input id="last_name" class="form-control" type="text" name="last_name" required=""
+                   placeholder="Surname"
+                   value="<?php echo(!empty($_POST['last_name']) ? $_POST['last_name'] : ''); ?>"/>
         </div>
-        <br>
-        <div class="row">
-            <div class="col-sm-4"></div>
-            <div class="col-sm">
-                <input id="password" class="form-control" type="password" name="password"
-                       placeholder="Password: min 6 characters" required=""
-                       value=""/>
-            </div>
-            <div class="col-sm-4"></div>
+        <div class="col-sm-4"></div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-sm-4"></div>
+        <div class="col-sm">
+            <input id="password" class="form-control" type="password" name="password"
+                   placeholder="Password: min 6 characters" required=""
+                   value=""/>
         </div>
-        <div id="err2" style="color: red"></div>
-        <br>
-            <div class="row">
-            <div class="col-sm-4"></div>
-            <div class="col-sm">
-                <input id="confirm_password" class="form-control" type="password" name="confirm_password" required=""
-                       value="" placeholder="Confirm password"/>
-            </div>
-            <div class="col-sm-4"></div>
+        <div class="col-sm-4"></div>
+    </div>
+    <div id="err2" style="color: red"></div>
+    <br>
+    <div class="row">
+        <div class="col-sm-4"></div>
+        <div class="col-sm">
+            <input id="confirm_password" class="form-control" type="password" name="confirm_password" required=""
+                   value="" placeholder="Confirm password"/>
         </div>
-        <div id="err3" style="color: red"></div>
-<!--        <br>-->
-        <div>
-            <br>
-            <input id="send" class="btn btn-default" type="button" name="submit" class="btn btn-secondary"
-                   value="Register"/>
-            <p>
+        <div class="col-sm-4"></div>
+    </div>
+    <div id="err3" style="color: red"></div>
 
-                <br>
-                You already have an account? - <a href="\login">Log in!</a>
-            </p>
-        </div>
+    <div>
+        <br>
+        <input id="send" class="btn btn-default" type="button" name="submit" class="btn btn-secondary"
+               value="Register"/>
+        <p>
+            <br>
+            You already have an account? - <a href="\login">Log in!</a>
+        </p>
+    </div>
 </div>
-<!--</div>-->
-<!--</div>-->
+
 

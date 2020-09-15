@@ -4,24 +4,47 @@ namespace application\models;
 
 use application\core\Model;
 
-class Main extends  Model{
-
-
+class Main extends Model
+{
     public $error;
 
-    public function registerAction($regUser, $regEmail, $regPass, $regFirst, $regLast)
+    public function registerAction($regUser, $regEmail, $regPass, $regFirst, $regLast, $err_email)
     {
-        $errors = []; $error=0;
+        $errors = [];
+        $error = 0;
         $success = [];
 
-        if (strlen($regUser)>30){$_SESSION['error_username'] = "Username does not fit"; $errors [] = "Username does not fit";}
-        if (strlen($regEmail)>30){$_SESSION['error_email'] = "Email does not fit";}
-        if (strlen($_POST['password'])<6){$_SESSION['error_password'] = "Password must be min six characters";}
-        if (strlen($regFirst)>50){$_SESSION['error_first_name'] = "Name does not fit";}
-        if (strlen($regLast)>50){$_SESSION['error_last_name'] = "Surname does not fit";}
-        if ($_POST['password'] !== $_POST['confirm_password']){$_SESSION['error_password'] = "Password mismatch";}
+        if (strlen($regUser) > 30) {
+            $_SESSION['error_username'] = "Username does not fit";
+        }
+        if (strlen($regEmail) > 30) {
+            $_SESSION['error_email'] = "Email does not fit";
+        }
+        if (strlen($_POST['password']) < 6) {
+            $_SESSION['error_password'] = "Password must be min six characters";
+        }
+        if (strlen($regFirst) > 50) {
+            $_SESSION['error_first_name'] = "Name does not fit";
+        }
+        if (strlen($regLast) > 50) {
+            $_SESSION['error_last_name'] = "Surname does not fit";
+        }
+        if ($_POST['password'] !== $_POST['confirm_password']) {
+            $_SESSION['error_password'] = "Password mismatch";
+        }
 
-        if(empty($errors)){
+        $stmt = $this->db->prepare("SELECT * FROM users  WHERE email = :email");
+        $stmt->bindParam(':email', $regEmail, \PDO::PARAM_STR);
+        $stmt->execute();
+        $row = $stmt->rowCount();
+//        return $row;
+        if ($row > 0) {
+            $err_email = 'email is already registered';
+            $errors [] = 'email is already registered';
+            $_POST['err_email'] = $err_email;
+        }
+
+        if (empty($errors)) {
             $stmt = $this->db->prepare("INSERT INTO users (`username`, `email`, `password`,                 `first_name`, `last_name`)
         VALUES (:username, :email, :password, :first_name, :last_name)");
 
@@ -40,8 +63,8 @@ class Main extends  Model{
                 'success' => true,
                 'success_messange' => $success,
             ];
-        }else{
-            return[
+        } else {
+            return [
                 'success' => false,
                 'error_messange' => $errors,
             ];

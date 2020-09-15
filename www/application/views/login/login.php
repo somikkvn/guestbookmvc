@@ -1,8 +1,12 @@
 <div id="err" style="color: red; display: none">
     <p class="error_message"></p>
     <?php
-    if($_SESSION['error_password']!=""){echo $_SESSION['error_password']."<br>";}
-    if($_SESSION['error_email']!=""){echo $_SESSION['error_email']."<br>";}
+    if ($_SESSION['error_password'] != "") {
+        echo $_SESSION['error_password'] . "<br>";
+    }
+    if ($_SESSION['error_email'] != "") {
+        echo $_SESSION['error_email'] . "<br>";
+    }
     ?>
 </div>
 <div>
@@ -33,7 +37,8 @@
         <div class="row">
             <div class="col-sm-4"></div>
             <div class="col-sm">
-                <input id="password" class="form-control" type="password" name="password" required="" placeholder="Password"
+                <input id="password" class="form-control" type="password" name="password" required=""
+                       placeholder="Password"
                        value=""/>
             </div>
             <div class="col-sm-4"></div>
@@ -41,7 +46,8 @@
         <div id="err2" style="color: red"></div>
         <div>
             <br>
-            <input id="send2" class="btn btn-default" type="button" name="send2" class="btn btn-secondary" value="Sign in"/>
+            <input id="send2" class="btn btn-default" type="button" name="send2" class="btn btn-secondary"
+                   value="Sign in"/>
         </div>
         <p>
             <br>

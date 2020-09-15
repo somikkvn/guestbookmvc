@@ -24,8 +24,10 @@ class MainController extends Controller
             $regFirst = $_POST['first_name'];
             $regLast = $_POST['last_name'];
             $regPass = $hash;
+            $err_email = $_POST['err_email'];
 
-            $result = $this->model->registerAction($regUser, $regEmail, $regPass, $regFirst, $regLast);
+
+            $result = $this->model->registerAction($regUser, $regEmail, $regPass, $regFirst, $regLast, $err_email);
             if (!empty($result['error_messange'])) {
                 $data['error'] = $result['error_messange'];
                return false;

@@ -14,7 +14,8 @@ $(document).ready(function () {
             email: $("#email").val(),
             first_name: $("#first_name").val(),
             last_name: $("#last_name").val(),
-            confirm_password: $("#confirm_password").val()
+            confirm_password: $("#confirm_password").val(),
+            err_email: $("#err_email").val(),
         }
 
         let validated = validation(request);
@@ -28,20 +29,19 @@ $(document).ready(function () {
                     if ((request)) {
                         // $('#send').prepend().load( '/login' );
                         window.location.href = "/login";
-                        //  console.log('cool');
                     } else {
                         $('#err').show();
+                        $('#err4').append('Email is already registered');
+
                         // $('.error_message').text('111')
                     }
                 }
-
             });
         } else {
             $('#err').show();
             // $('.error_message').text('111')
         }
     });
-
 
     function validation(request) {
         // console.log('validation()')
@@ -55,7 +55,9 @@ $(document).ready(function () {
         if (request.password !== request.confirm_password) {
             data.push('Password mismatch');
         }
-
+        if (request.err_email !== ""){
+            data.push('Email is already registered');
+        }
         // if (data.length) {
         //     data.forEach((text) => {
         //         $('.error_message').append('<p>' + text + '</p>');
@@ -73,13 +75,12 @@ $(document).ready(function () {
                 if (value == "Password mismatch") {
                     $('#err3').append(value);
                 }
-
+                // if (value == "Email is already registered") {
+                //     $('#err4').append(value);
+                // }
             });
-
             return false;
         }
-
         return true;
     }
-
 });
