@@ -16,6 +16,7 @@ class Main extends Model
 
         if (strlen($regUser) > 30) {
             $_SESSION['error_username'] = "Username does not fit";
+
         }
         if (strlen($regEmail) > 30) {
             $_SESSION['error_email'] = "Email does not fit";

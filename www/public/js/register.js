@@ -19,7 +19,7 @@ $(document).ready(function () {
         }
 
         let validated = validation(request);
-        if (validated) {
+
             $.ajax({
                 url: '/register',
                 type: "POST",
@@ -27,20 +27,19 @@ $(document).ready(function () {
                 dataType: "html",
                 success: function (request) {
                     if ((request)) {
-                        // $('#send').prepend().load( '/login' );
+                        if (validated) {
                         window.location.href = "/login";
-                    } else {
-                        $('#err').show();
+                        }
+                        else {
+                            $('#err').show();
+                        }
+                    }
+                    else {
                         $('#err4').append('Email is already registered');
-
-                        // $('.error_message').text('111')
                     }
                 }
-            });
-        } else {
-            $('#err').show();
-            // $('.error_message').text('111')
-        }
+            })
+
     });
 
     function validation(request) {
@@ -55,9 +54,9 @@ $(document).ready(function () {
         if (request.password !== request.confirm_password) {
             data.push('Password mismatch');
         }
-        if (request.err_email !== ""){
+        /*if (request.err_email !== ""){
             data.push('Email is already registered');
-        }
+        }*/
         // if (data.length) {
         //     data.forEach((text) => {
         //         $('.error_message').append('<p>' + text + '</p>');
@@ -75,9 +74,9 @@ $(document).ready(function () {
                 if (value == "Password mismatch") {
                     $('#err3').append(value);
                 }
-                // if (value == "Email is already registered") {
-                //     $('#err4').append(value);
-                // }
+                if (value == "Email is already registered") {
+                    $('#err4').append(value);
+                }
             });
             return false;
         }
