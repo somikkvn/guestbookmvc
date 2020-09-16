@@ -25,11 +25,15 @@ class MainController extends Controller
             $regLast = $_POST['last_name'];
             $regPass = $hash;
             $err_email = $_POST['err_email'];
+            $err_username = $_POST['err_username'];
 
-
-            $result = $this->model->registerAction($regUser, $regEmail, $regPass, $regFirst, $regLast, $err_email);
+            $result = $this->model->registerAction($regUser, $regEmail, $regPass, $regFirst, $regLast, $err_email, $err_username);
             if (!empty($result['error_messange'])) {
                 $data['error'] = $result['error_messange'];
+
+                $response = json_encode($data);
+                header('Content-Type: application/json');
+                echo $response;
                return false;
             }
             else {
@@ -38,6 +42,7 @@ class MainController extends Controller
             }
         }
         $this->view->render('Регистрация', $data);
+
     }
 
     public function logoutAction()
