@@ -20,10 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b0c2e0b3-1893-4c0c-bef7-25679c0e0558" name="Default Changelist" comment="15.09 commit">
+      <change afterPath="$PROJECT_DIR$/www/public/js/guestInsert.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/www/application/controllers/MainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/www/application/controllers/MainController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/www/application/models/Main.php" beforeDir="false" afterPath="$PROJECT_DIR$/www/application/models/Main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/application/views/guest/guestbook.php" beforeDir="false" afterPath="$PROJECT_DIR$/www/application/views/guest/guestbook.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/www/application/views/main/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/www/application/views/main/register.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/public/js/login.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/www/public/js/register.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/public/js/register.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -134,6 +137,10 @@
       <workItem from="1600149970031" duration="13887000" />
       <workItem from="1600239332062" duration="11145000" />
       <workItem from="1600250550580" duration="3177000" />
+      <workItem from="1600348176059" duration="1510000" />
+      <workItem from="1600351616960" duration="15000" />
+      <workItem from="1600353826313" duration="94000" />
+      <workItem from="1600368758167" duration="5781000" />
     </task>
     <task id="LOCAL-00001" summary="13.09 commit">
       <created>1600029829871</created>
@@ -202,10 +209,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="371" y="96" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.680@0.0.1280.680" timestamp="1599464615739" />
-    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1600167942845">
+    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1600371618304">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1600167942845" />
+    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1600371618304" />
     <state x="365" y="64" key="NewPhpClassDialog" timestamp="1599463932446">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -218,18 +225,18 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1600250188316" />
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1600116923128">
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1600374723837">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1600116923128" />
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1600374723837" />
     <state x="217" y="56" width="587" height="624" key="find.popup" timestamp="1600166208391">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="217" y="56" width="587" height="624" key="find.popup/0.0.1280.680@0.0.1280.680" timestamp="1600166208391" />
-    <state x="297" y="151" key="run.anything.popup" timestamp="1600249863825">
+    <state x="297" y="151" key="run.anything.popup" timestamp="1600369117605">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="297" y="151" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1600249863825" />
+    <state x="297" y="151" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1600369117605" />
     <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1600074733399">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

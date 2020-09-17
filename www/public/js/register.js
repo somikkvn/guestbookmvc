@@ -8,6 +8,11 @@ $(document).ready(function () {
 
     $('#send').bind("click", function (event) {
         event.preventDefault();
+        $('#err1').empty();
+        $('#err1a').empty();
+        $('#err2').empty();
+        $('#err3').empty();
+        $('#err4').empty();
         let request = {
             username: $("#username").val(),
             password: $("#password").val(),
@@ -29,26 +34,20 @@ $(document).ready(function () {
                 data: (request),
                 dataType: "json",
                 success: function (response) {
-                    if ((response)) {
+
                         console.log(response);
-                        let responseData = /*JSON.parse*/(response);
 
-                         if(responseData.error[0] != undefined){
-                             console.log(responseData.error[0])
-                             $('#err4').append('Email is already registered');
-                         }
-                        if(responseData.error[1] != undefined){
-                            console.log(responseData.error[1])
-                            $('#err1a').append('Username is already registered');
-                        }
-
-                        if (validated) {
+                        //let responseData = /*JSON.parse*/(response);
+                                 $('#err4').append(response['email']);
+                                $('#err1a').append(response['username']);
+                    if ( response['email'] === "" && response['username'] === "" && (validated))
+                        {
                         window.location.href = "/login";
                         }
                         else {
                             $('#err').show();
                         }
-                    }
+
                 }
             })
 
@@ -66,13 +65,6 @@ $(document).ready(function () {
         if (request.password !== request.confirm_password) {
             data.push('Password mismatch');
         }
-        // if (request.err_email !== ""){
-        //     data.push('Email is already registered');
-        // }
-        // if (data.length) {
-        //     data.forEach((text) => {
-        //         $('.error_message').append('<p>' + text + '</p>');
-        //     });
 
         if (data.length) {
             $.each(data, function (index, value) {
@@ -89,15 +81,7 @@ $(document).ready(function () {
                 if (value == "Password mismatch") {
                     $('#err3').append(value);
                 }
-                // if (value == "Email is already registered") {
-                //     $('#err4').append(value);
-                // }
-                // if (value == "Username is already registered") {
-                //     $('#err_email').append(value);
-                // }
-                // if (value == "Email is already registered") {
-                //     $('#err_username').append(value);
-                // }
+
             });
             return false;
         }

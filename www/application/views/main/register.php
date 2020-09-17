@@ -1,22 +1,5 @@
 <div id="err" style="color: red; display: none">
     <p class="error_message"></p>
-    <?php
-    if ($_SESSION['error_username'] != "") {
-        echo $_SESSION['error_username'] . "<br>";
-    }
-    if ($_SESSION['error_password'] != "") {
-        echo $_SESSION['error_password'] . "<br>";
-    }
-    if ($_SESSION['error_first_name'] != "") {
-        echo $_SESSION['error_first_name'] . "<br>";
-    }
-    if ($_SESSION['error_last_name'] != "") {
-        echo $_SESSION['error_last_name'] . "<br>";
-    }
-    if ($_SESSION['error_email'] != "") {
-        echo $_SESSION['error_email'] . "<br>";
-    }
-    ?>
 </div>
 <div align="center">
     <h2>Registration page</h2>

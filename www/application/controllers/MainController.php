@@ -28,10 +28,8 @@ class MainController extends Controller
             $err_username = $_POST['err_username'];
 
             $result = $this->model->registerAction($regUser, $regEmail, $regPass, $regFirst, $regLast, $err_email, $err_username);
-            if (!empty($result['error_messange'])) {
-                $data['error'] = $result['error_messange'];
-
-                $response = json_encode($data);
+            if (!empty($result)) {
+                $response = json_encode($result);
                 header('Content-Type: application/json');
                 echo $response;
                return false;
