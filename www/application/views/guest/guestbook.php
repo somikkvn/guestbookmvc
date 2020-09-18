@@ -53,6 +53,7 @@
         ?>
     </ul>
 </nav>
+
 <?php
 if (!empty($items)) {
     foreach ($items as $item) { ?>
@@ -62,14 +63,14 @@ if (!empty($items)) {
         <?php echo "Comment:" . ' ' . $item['text']; ?>
 
         <?php if (!empty($_SESSION["id"])) : ?>
-            <form id="comment_from" action="/guestbook" method="post">
-                <input type="text" name="author" class="form-control" placeholder="Your name:"
+            <form id="comment_from2">
+                <input type="text" id="author2" class="form-control" placeholder="Your name:"
                        value="<?php echo(!empty($_POST['author']) ? $_POST['author'] : ''); ?>"/>
                 <br>
-                <textarea name="text" class="form-control" placeholder="Comment:"
+                <textarea id="text2" class="form-control" placeholder="Comment:"
                           value="<?php echo(!empty($_POST['text']) ? $_POST['text'] : ''); ?>"></textarea></p>
-                <input type="hidden" name="parent_id" value="<?php echo($item['comment_id']); ?>"/>
-                <p><input class="btn btn-default" type="submit" name="submit" class="btn btn-secondary" value="Submit"/>
+                <input type="hidden" id="parent_id2" value="<?php echo($item['comment_id']); ?>"/>
+                <p><input class="btn btn-default" type="submit" name="submit" class="btn btn-secondary" value="Submit"/></p>
                 </p>
             </form>
         <?php else: ?>
@@ -90,7 +91,7 @@ if (!empty($items)) {
                     <?php echo "Comment:" . ' ' . $item2['text']; ?>
 
                     <?php if (!empty($_SESSION["id"])) : ?>
-                        <form id="comment_from" action="/guestbook" method="post">
+                        <form id="comment_from3">
                             <input type="text" name="author" class="form-control" placeholder="Your name:"
                                    value="<?php echo(!empty($_POST['author']) ? $_POST['author'] : ''); ?>"/>
                             <br><textarea name="text" class="form-control" placeholder="Comment:"

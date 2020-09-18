@@ -26,6 +26,11 @@ class GuestController extends Controller
                     $response3 = json_encode($result);
                     header('Content-Type: application/json');
                     echo $response3;
+
+                    $response4 = json_encode($result);
+                    header('Content-Type: application/json');
+                    echo $response4;
+
                     return true;
                 }
 
@@ -48,8 +53,6 @@ class GuestController extends Controller
 
             foreach ($data['items'] as $item_key => $item) {
                 $data ['items'][$item_key]['childrens'] = $this->model->getComment( $item['comment_id']);
-//                var_dump($data ['items'][$item_key]);
-//                die;
             }
             $this->view->render('Гостевая книга', $data);
         }

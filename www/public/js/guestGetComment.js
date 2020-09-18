@@ -1,13 +1,12 @@
 $(document).ready(function () {
-    $('#comment_from').bind("click", function (event) {
+    $('#comment_from2').bind("click", function (event) {
         event.preventDefault();
-
-        let request3 = {
-            author: $("#author").val(),
-            text: $("#text").val(),
-            parent_id: $("#parent_id").val(),
+        let request4 = {
+            author: $("#author2").val(),
+            text: $("#text2").val(),
+            parent_id: $("#parent_id2").val(),
         }
-        console.log(request3);
+        console.log(request4);
         // if ( request3['author'] === "" && request3['text'] === "")
         // {
         //    alert('Заполните все поля!');
@@ -16,11 +15,11 @@ $(document).ready(function () {
         $.ajax({
             url: '/guestbook',
             type: "POST",
-            data: (request3),
+            data: (request4),
             dataType: "json",
-            success: function (response3) {
+            success: function (response4) {
 
-                console.log(response3);
+                console.log(response4);
 
             }
         })
