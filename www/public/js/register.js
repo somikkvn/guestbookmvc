@@ -43,8 +43,7 @@ $(document).ready(function () {
                                 console.log(response['email']);
                     if ( response['email'] === "" && response['username'] === "" && (validated))
                         {
-                        window.location.replace('/login');
-                        // window.location.href = "/login";
+                            window.location.href = "/login";
                         }
                         else {
                             $('#err').show();

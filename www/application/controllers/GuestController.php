@@ -38,7 +38,7 @@ class GuestController extends Controller
             }
 
             //Пагинация
-            $limit = 3;
+            $limit = 5;
             $offset = $limit * ($page - 1);
             for ($i = 0; $i < $limit; $i++) {
             }

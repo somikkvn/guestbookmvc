@@ -8,7 +8,7 @@ class Main extends Model
 {
     public $error;
 
-    public function registerAction($regUser, $regEmail, $regPass, $regFirst, $regLast, $err_email, $err_username)
+    public function registerAction($regUser, $regEmail, $regPass, $regFirst, $regLast)
     {
         $errors = [];
 

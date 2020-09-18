@@ -1,5 +1,4 @@
 <h2 align="center">Guest book</h2>
-
 <div class="form-group">
     <?php if (!empty($_SESSION["id"])) : ?>
         <form id="comment_from">

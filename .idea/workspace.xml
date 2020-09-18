@@ -19,11 +19,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0c2e0b3-1893-4c0c-bef7-25679c0e0558" name="Default Changelist" comment="18.09 commit5">
+    <list default="true" id="b0c2e0b3-1893-4c0c-bef7-25679c0e0558" name="Default Changelist" comment="18.09 commit6">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/application/controllers/GuestController.php" beforeDir="false" afterPath="$PROJECT_DIR$/www/application/controllers/GuestController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/application/models/Main.php" beforeDir="false" afterPath="$PROJECT_DIR$/www/application/models/Main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/application/views/guest/guestbook.php" beforeDir="false" afterPath="$PROJECT_DIR$/www/application/views/guest/guestbook.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/application/views/layouts/default.php" beforeDir="false" afterPath="$PROJECT_DIR$/www/application/views/layouts/default.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/www/public/js/guestGetComment.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/public/js/guestGetComment.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/public/js/guestGetCommentChildren.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/public/js/guestGetCommentChildren.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/public/js/guestInsert.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/public/js/guestInsert.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/public/js/guestGetCommentChildren.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/public/js/register.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/public/js/register.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +56,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/www/public/js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../gb4.loc" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.editor.code.editing" />
   </component>
@@ -138,7 +142,7 @@
       <workItem from="1600353826313" duration="94000" />
       <workItem from="1600368758167" duration="8487000" />
       <workItem from="1600409516343" duration="8888000" />
-      <workItem from="1600419071936" duration="10534000" />
+      <workItem from="1600419071936" duration="14661000" />
     </task>
     <task id="LOCAL-00001" summary="13.09 commit">
       <created>1600029829871</created>
@@ -210,7 +214,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600427414104</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="18.09 commit6">
+      <created>1600429644537</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1600429644537</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -239,7 +250,8 @@
     <MESSAGE value="18.09 commit3" />
     <MESSAGE value="18.09 commit4" />
     <MESSAGE value="18.09 commit5" />
-    <option name="LAST_COMMIT_MESSAGE" value="18.09 commit5" />
+    <MESSAGE value="18.09 commit6" />
+    <option name="LAST_COMMIT_MESSAGE" value="18.09 commit6" />
   </component>
   <component name="WindowStateProjectService">
     <state x="267" y="19" key="#Inspections" timestamp="1600409811799">
@@ -250,6 +262,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="396" y="165" key="#Notifications/0.0.1280.680@0.0.1280.680" timestamp="1598691944032" />
+    <state x="22" y="182" key="#SQL_Dialects" timestamp="1600429836168">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="22" y="182" key="#SQL_Dialects/0.0.1280.680@0.0.1280.680" timestamp="1600429836168" />
     <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600167697465">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -266,10 +282,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="371" y="96" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.680@0.0.1280.680" timestamp="1599464615739" />
-    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1600417449525">
+    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1600431884728">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1600417449525" />
+    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1600431884728" />
     <state x="365" y="64" key="NewPhpClassDialog" timestamp="1599463932446">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -282,10 +298,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1600250188316" />
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1600427418119">
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1600429646372">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1600427418119" />
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1600429646372" />
     <state x="217" y="56" width="587" height="624" key="find.popup" timestamp="1600166208391">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
