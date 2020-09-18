@@ -19,13 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0c2e0b3-1893-4c0c-bef7-25679c0e0558" name="Default Changelist" comment="18.09 commit3">
-      <change afterPath="$PROJECT_DIR$/www/public/js/guestGetComment.js" afterDir="false" />
+    <list default="true" id="b0c2e0b3-1893-4c0c-bef7-25679c0e0558" name="Default Changelist" comment="18.09 commit4">
+      <change afterPath="$PROJECT_DIR$/www/public/js/guestGetCommentChildren.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/www/application/controllers/GuestController.php" beforeDir="false" afterPath="$PROJECT_DIR$/www/application/controllers/GuestController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/www/application/views/guest/guestbook.php" beforeDir="false" afterPath="$PROJECT_DIR$/www/application/views/guest/guestbook.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/www/application/views/layouts/default.php" beforeDir="false" afterPath="$PROJECT_DIR$/www/application/views/layouts/default.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/public/js/guestInsert.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/public/js/guestInsert.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/public/js/guestGetComment.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/public/js/guestGetComment.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,24 +54,24 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../gb8.loc" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/www/public/js" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.editor.code.editing" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\OpenServer\domains\framework.loc\www\public\js" />
-      <recent name="E:\OpenServer\domains\framework.loc\www\application\models" />
-      <recent name="E:\OpenServer\domains\framework.loc\www\application\controllers" />
-      <recent name="E:\OpenServer\domains\framework.loc\www\application\views\guest" />
-      <recent name="E:\OpenServer\domains\framework.loc\www\application\views" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\OpenServer\domains\framework.loc\www\application\views\err" />
       <recent name="E:\OpenServer\domains\framework.loc" />
       <recent name="E:\OpenServer\domains\framework.loc\www\application\views\contact" />
       <recent name="E:\OpenServer\domains\framework.loc\www\application\views\login" />
       <recent name="E:\OpenServer\domains\framework.loc\www\application\views\guest" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\OpenServer\domains\framework.loc\www\public\js" />
+      <recent name="E:\OpenServer\domains\framework.loc\www\application\models" />
+      <recent name="E:\OpenServer\domains\framework.loc\www\application\controllers" />
+      <recent name="E:\OpenServer\domains\framework.loc\www\application\views\guest" />
+      <recent name="E:\OpenServer\domains\framework.loc\www\application\views" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -140,7 +140,7 @@
       <workItem from="1600353826313" duration="94000" />
       <workItem from="1600368758167" duration="8487000" />
       <workItem from="1600409516343" duration="8888000" />
-      <workItem from="1600419071936" duration="6473000" />
+      <workItem from="1600419071936" duration="8082000" />
     </task>
     <task id="LOCAL-00001" summary="13.09 commit">
       <created>1600029829871</created>
@@ -198,7 +198,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600419603032</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="18.09 commit4">
+      <created>1600425566151</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1600425566151</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,7 +232,8 @@
     <MESSAGE value="18.09 commit" />
     <MESSAGE value="18.09 commit2" />
     <MESSAGE value="18.09 commit3" />
-    <option name="LAST_COMMIT_MESSAGE" value="18.09 commit3" />
+    <MESSAGE value="18.09 commit4" />
+    <option name="LAST_COMMIT_MESSAGE" value="18.09 commit4" />
   </component>
   <component name="WindowStateProjectService">
     <state x="267" y="19" key="#Inspections" timestamp="1600409811799">
@@ -268,10 +276,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1600250188316" />
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1600419618288">
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1600425571061">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1600419618288" />
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1600425571061" />
     <state x="217" y="56" width="587" height="624" key="find.popup" timestamp="1600166208391">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

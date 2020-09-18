@@ -1,6 +1,7 @@
 $(document).ready(function () {
     $('#comment_from2').bind("click", function (event) {
         event.preventDefault();
+
         let request4 = {
             author: $("#author2").val(),
             text: $("#text2").val(),
@@ -25,4 +26,5 @@ $(document).ready(function () {
         })
 
     });
+
 });

@@ -59,6 +59,7 @@
 <script src="/public/js/login.js"></script>
 <script src="/public/js/guestInsert.js"></script>
 <script src="/public/js/guestGetComment.js"></script>
+<script src="/public/js/guestGetCommentChildren.js"></script>
 <script src="/public/js/bootstrap.min.js"></script>
 <script src="/public/js/bootstrap.js"></script>
 </body>

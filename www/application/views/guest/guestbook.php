@@ -71,7 +71,6 @@ if (!empty($items)) {
                           value="<?php echo(!empty($_POST['text']) ? $_POST['text'] : ''); ?>"></textarea></p>
                 <input type="hidden" id="parent_id2" value="<?php echo($item['comment_id']); ?>"/>
                 <p><input class="btn btn-default" type="submit" name="submit" class="btn btn-secondary" value="Submit"/></p>
-                </p>
             </form>
         <?php else: ?>
             <div class="form">
@@ -92,14 +91,13 @@ if (!empty($items)) {
 
                     <?php if (!empty($_SESSION["id"])) : ?>
                         <form id="comment_from3">
-                            <input type="text" name="author" class="form-control" placeholder="Your name:"
+                            <input type="text" id="author3" class="form-control" placeholder="Your name:"
                                    value="<?php echo(!empty($_POST['author']) ? $_POST['author'] : ''); ?>"/>
-                            <br><textarea name="text" class="form-control" placeholder="Comment:"
+                            <br><textarea id="text3" class="form-control" placeholder="Comment:"
                                           value="<?php echo(!empty($_POST['text']) ? $_POST['text'] : ''); ?>"></textarea>
                             </p>
-                            <input type="hidden" name="parent_id" value="<?php echo($item2['parent_id']); ?>"/>
-                            <p><input class="btn btn-default" type="submit" name="submit" class="btn btn-secondary"
-                                      value="Submit"/></p>
+                            <input type="hidden" id="parent_id3" value="<?php echo($item2['parent_id']); ?>"/>
+                            <p><input class="btn btn-default" type="submit" name="submit" class="btn btn-secondary" value="Submit"/></p>
                         </form>
                     <?php else: ?>
                         <div class="form">
