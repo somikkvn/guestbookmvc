@@ -40,9 +40,11 @@ $(document).ready(function () {
                         //let responseData = /*JSON.parse*/(response);
                                  $('#err4').append(response['email']);
                                 $('#err1a').append(response['username']);
+                                console.log(response['email']);
                     if ( response['email'] === "" && response['username'] === "" && (validated))
                         {
-                        window.location.href = "/login";
+                        window.location.replace('/login');
+                        // window.location.href = "/login";
                         }
                         else {
                             $('#err').show();

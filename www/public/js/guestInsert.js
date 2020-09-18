@@ -1,23 +1,29 @@
-$('#comment_from').on('submit',function(){//используйте id лучше
-    e.pereventDefault();//блокируем действия по умолчанию, чтобы не перезагружать страницу
-    let request = {
-        username: $("#username").val(),
-        password: $("#password").val(),//записываем сюда данные которые хотим передать
-    }
-    console.log(request);
-    $.ajax({
-        url:'file.php',
-        data:request,//наши данные которые передадим
-        method:'POST',//метод
-        dataType:'text/plain',
-    }).done(function(request){//допустим сервер будет возвращять JSON {isError="true",message="Всё записалось"}
-        //описываем действия по получению ответа сервера
-        if(request.isError==true){
-            //коммент записался
-            page.render(request);//отрисовываем наш комент с переданными ранее данными
+$(document).ready(function () {
+    $('#comment_from').on("click", function (event) {
+        event.preventDefault();
+
+        let request3 = {
+            author: $("#author").val(),
+            text: $("#text").val(),
+            parent_id: $("#parent_id").val(),
         }
-    }).fail(function(err){
-        //обрабатываем ошибку ajax
+        console.log(request3);
+        // if ( request3['author'] === "" && request3['text'] === "")
+        // {
+        //    alert('Заполните все поля!');
+        //
+        // }
+        $.ajax({
+            url: '/guestbook',
+            type: "POST",
+            data: (request3),
+            dataType: "json",
+            success: function (response3) {
+
+                console.log(response3);
+
+            }
+        })
 
     });
 });

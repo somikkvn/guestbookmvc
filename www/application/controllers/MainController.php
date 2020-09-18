@@ -32,11 +32,11 @@ class MainController extends Controller
                 $response = json_encode($result);
                 header('Content-Type: application/json');
                 echo $response;
-               return false;
+               return true;
             }
             else {
                 header('Location: /login');
-                return true;
+//                return false;
             }
         }
         $this->view->render('Регистрация', $data);

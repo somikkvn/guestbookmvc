@@ -22,12 +22,13 @@ class GuestController extends Controller
 //                die;
 
                 $result = $this->model->guestbookAction($author, $text, $parent_id);
-                if (!empty($result['error_messange'])){
-                    $data['error'] = $result['error_messange'];
-                }else{
-
-                    header('Location: /guestbook');
+                if (!empty($result)) {
+                    $response3 = json_encode($result);
+                    header('Content-Type: application/json');
+                    echo $response3;
+                    return true;
                 }
+
             }
 
 

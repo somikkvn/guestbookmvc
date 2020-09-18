@@ -4,12 +4,12 @@
     <?php if (!empty($_SESSION["id"])) : ?>
         <form id="comment_from">
             <p><br>
-                <input type="text" name="author" class="form-control" placeholder="Your name:"
+                <input type="text" id="author" class="form-control" placeholder="Your name:"
                        value="<?php echo(!empty($_POST['author']) ? $_POST['author'] : ''); ?>"/>
             <p><br>
-                <textarea name="text" class="form-control" placeholder="Comment:"
+                <textarea id="text" class="form-control" placeholder="Comment:"
                           value="<?php echo(!empty($_POST['text']) ? $_POST['text'] : ''); ?>"></textarea></p>
-            <input type="hidden" name="parent_id" value="0"/>
+            <input type="hidden" id="parent_id" value="0"/>
             <p><input class="btn btn-default" type="submit" name="submit" class="btn btn-secondary" value="Submit"/></p>
         </form>
     <?php else: ?>

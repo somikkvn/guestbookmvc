@@ -82,7 +82,7 @@
 
     <div>
         <br>
-        <input id="send" class="btn btn-default" type="button" name="submit" class="btn btn-secondary"
+        <input id="send" class="btn btn-default" type="button"  class="btn btn-secondary"
                value="Register"/>
         <p>
             <br>
