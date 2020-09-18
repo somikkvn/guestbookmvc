@@ -19,10 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0c2e0b3-1893-4c0c-bef7-25679c0e0558" name="Default Changelist" comment="18.09 commit">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/application/views/guest/guestbook.php" beforeDir="false" afterPath="$PROJECT_DIR$/www/application/views/guest/guestbook.php" afterDir="false" />
-    </list>
+    <list default="true" id="b0c2e0b3-1893-4c0c-bef7-25679c0e0558" name="Default Changelist" comment="18.09 commit2" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -136,6 +133,7 @@
       <workItem from="1600353826313" duration="94000" />
       <workItem from="1600368758167" duration="8487000" />
       <workItem from="1600409516343" duration="8888000" />
+      <workItem from="1600419071936" duration="398000" />
     </task>
     <task id="LOCAL-00001" summary="13.09 commit">
       <created>1600029829871</created>
@@ -179,7 +177,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600417964652</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="18.09 commit2">
+      <created>1600419262023</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1600419262024</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,7 +209,8 @@
     <MESSAGE value="14.09 Final commit" />
     <MESSAGE value="17.09 commit" />
     <MESSAGE value="18.09 commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="18.09 commit" />
+    <MESSAGE value="18.09 commit2" />
+    <option name="LAST_COMMIT_MESSAGE" value="18.09 commit2" />
   </component>
   <component name="WindowStateProjectService">
     <state x="267" y="19" key="#Inspections" timestamp="1600409811799">
