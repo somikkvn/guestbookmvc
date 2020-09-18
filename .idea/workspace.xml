@@ -19,15 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0c2e0b3-1893-4c0c-bef7-25679c0e0558" name="Default Changelist" comment="17.09 commit">
+    <list default="true" id="b0c2e0b3-1893-4c0c-bef7-25679c0e0558" name="Default Changelist" comment="18.09 commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/application/controllers/GuestController.php" beforeDir="false" afterPath="$PROJECT_DIR$/www/application/controllers/GuestController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/application/controllers/MainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/www/application/controllers/MainController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/www/application/views/guest/guestbook.php" beforeDir="false" afterPath="$PROJECT_DIR$/www/application/views/guest/guestbook.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/application/views/layouts/default.php" beforeDir="false" afterPath="$PROJECT_DIR$/www/application/views/layouts/default.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/application/views/main/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/www/application/views/main/register.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/public/js/guestInsert.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/public/js/guestInsert.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/public/js/register.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/public/js/register.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +50,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../gb8.loc" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.editor.code.editing" />
   </component>
@@ -141,7 +135,7 @@
       <workItem from="1600351616960" duration="15000" />
       <workItem from="1600353826313" duration="94000" />
       <workItem from="1600368758167" duration="8487000" />
-      <workItem from="1600409516343" duration="7173000" />
+      <workItem from="1600409516343" duration="8428000" />
     </task>
     <task id="LOCAL-00001" summary="13.09 commit">
       <created>1600029829871</created>
@@ -171,7 +165,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600374746231</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="18.09 commit">
+      <created>1600416772168</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1600416772168</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -195,7 +196,8 @@
     <MESSAGE value="14.09 commit" />
     <MESSAGE value="14.09 Final commit" />
     <MESSAGE value="17.09 commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="17.09 commit" />
+    <MESSAGE value="18.09 commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="18.09 commit" />
   </component>
   <component name="WindowStateProjectService">
     <state x="267" y="19" key="#Inspections" timestamp="1600409811799">
@@ -222,10 +224,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="371" y="96" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.680@0.0.1280.680" timestamp="1599464615739" />
-    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1600371618304">
+    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1600417449525">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1600371618304" />
+    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1600417449525" />
     <state x="365" y="64" key="NewPhpClassDialog" timestamp="1599463932446">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -238,10 +240,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1600250188316" />
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1600409544620">
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1600416824726">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1600409544620" />
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1600416824726" />
     <state x="217" y="56" width="587" height="624" key="find.popup" timestamp="1600166208391">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
