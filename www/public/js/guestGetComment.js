@@ -1,6 +1,6 @@
 $(document).ready(function () {
-    $('#comment_from2').bind("click", function (event) {
-        event.preventDefault();
+    $('#comment_from2').bind("click", function (e) {
+        e.preventDefault();
 
         let request4 = {
             author: $("#author2").val(),

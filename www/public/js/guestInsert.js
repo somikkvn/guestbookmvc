@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $('#comment_from').bind("click", function (event) {
+    $('#comment_from').on("click", function (event) {
         event.preventDefault();
 
         let request3 = {
