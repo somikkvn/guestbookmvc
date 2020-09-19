@@ -11,6 +11,11 @@ class Main extends Model
     public function registerAction($regUser, $regEmail, $regPass, $regFirst, $regLast)
     {
         $errors = [];
+        $errors['error_username'] = "";
+        $errors['email'] = "";
+        $errors['username'] = "";
+        $errors['error_password'] = "";
+        $errors['error_passwords'] = "";
 
         if (strlen($regUser) > 30) {
             $errors['error_username'] = "Username does not fit";
@@ -40,7 +45,7 @@ class Main extends Model
             $errors ['username'] = 'username is already registered';
         }
 
-        if (empty($errors)) {
+        if ($errors['error_username'] == "" && $errors['email'] == "" && $errors['username'] == "" && $errors['error_password'] == "" && $errors['error_passwords'] == "") {
             $stmt = $this->db->prepare("INSERT INTO users (`username`, `email`, `password`,                 `first_name`, `last_name`)
         VALUES (:username, :email, :password, :first_name, :last_name)");
 

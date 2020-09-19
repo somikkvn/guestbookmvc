@@ -24,20 +24,13 @@ class MainController extends Controller
             $regFirst = $_POST['first_name'];
             $regLast = $_POST['last_name'];
             $regPass = $hash;
-            $err_email = $_POST['err_email'];
-            $err_username = $_POST['err_username'];
 
-            $result = $this->model->registerAction($regUser, $regEmail, $regPass, $regFirst, $regLast, $err_email, $err_username);
-            if (!empty($result)) {
+            $result = $this->model->registerAction($regUser, $regEmail, $regPass, $regFirst, $regLast);
+
                 $response = json_encode($result);
                 header('Content-Type: application/json');
                 echo $response;
                return true;
-            }
-            else {
-                header('Location: /login');
-//                return false;
-            }
         }
         $this->view->render('Регистрация', $data);
 

@@ -27,7 +27,6 @@
     </div>
     <div id="err1" style="color: red"></div>
     <div id="err1a" style="color: red"></div>
-    <input id="err_username" name="err_username" type="hidden" value="" style="color: red"/>
     <br>
     <div class="row">
         <div class="col-sm-4"></div>
@@ -37,7 +36,6 @@
         </div>
         <div class="col-sm-4"></div>
     </div>
-    <input id="err_email" name="err_email" type="hidden" value=""/>
     <div id="err4" style="color: red"></div>
     <br>
     <div class="row">

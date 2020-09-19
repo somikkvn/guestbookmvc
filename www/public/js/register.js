@@ -20,13 +20,11 @@ $(document).ready(function () {
             first_name: $("#first_name").val(),
             last_name: $("#last_name").val(),
             confirm_password: $("#confirm_password").val(),
-            err_email: $("#err_email").val(),
-            err_username: $("#err_username").val(),
         }
         console.log(request);
         // console.log(request.username);
 
-        let validated = validation(request);
+        // let validated = validation(request);
 
             $.ajax({
                 url: '/register',
@@ -34,58 +32,19 @@ $(document).ready(function () {
                 data: (request),
                 dataType: "json",
                 success: function (response) {
-
                         console.log(response);
-
-                        //let responseData = /*JSON.parse*/(response);
-                                 $('#err4').append(response['email']);
+                                $('#err1').append(response['error_username']);
                                 $('#err1a').append(response['username']);
-                                console.log(response['email']);
-                    if ( response['email'] === "" && response['username'] === "" && (validated))
+                                $('#err2').append(response['error_password']);
+                                $('#err3').append(response['error_passwords']);
+                                $('#err4').append(response['email']);
+
+                                // console.log(response['email']);
+                    if ( response['error_username'] === "" && response['username'] === "" && response['error_password'] === "" && response['error_passwords'] === "" && response['email'] === "")
                         {
                             window.location.href = "/login";
                         }
-                        else {
-                            $('#err').show();
-                        }
-
                 }
             })
-
     });
-
-    function validation(request) {
-        // console.log('validation()')
-        let data = [];
-        if (request.username.length > 30) {
-            data.push('Username does not fit');
-        }
-        if (request.password.length < 6) {
-            data.push('Password must be min six characters');
-        }
-        if (request.password !== request.confirm_password) {
-            data.push('Password mismatch');
-        }
-
-        if (data.length) {
-            $.each(data, function (index, value) {
-                // $('#err'+index).append(value);
-                if (value == 'Username does not fit') {
-                    $('#err1').append(value);
-                }
-                if (value == 'Username is already registered') {
-                    $('#err1a').append(value);
-                }
-                if (value == "Password must be min six characters") {
-                    $('#err2').append(value);
-                }
-                if (value == "Password mismatch") {
-                    $('#err3').append(value);
-                }
-
-            });
-            return false;
-        }
-        return true;
-    }
 });
