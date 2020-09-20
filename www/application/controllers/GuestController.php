@@ -26,23 +26,9 @@ class GuestController extends Controller
             $data['items'] = $this->model->getParent($limit, $offset);
             foreach ($data['items'] as $item_key => $item) {
                 $data ['items'][$item_key]['childrens'] = $this->model->getComment($item['comment_id']);
-//                $result = $item;
-//                $response3 = json_encode($item);
-//                header('Content-Type: application/json');
-//                echo $response3;
-                //$this->view->replyGuest333($item);
+
             }
 
-//
-////                    $response4 = json_encode($result);
-////                    header('Content-Type: application/json');
-////                    echo $response4;
-////
-////                    $response5 = json_encode($result);
-////                    header('Content-Type: application/json');
-////                    echo $response5;
-//                return true;
-//            }
             $this->view->render('Гостевая книга', $data);
 
     }
@@ -54,7 +40,6 @@ class GuestController extends Controller
             $text = $_POST['text'];
             $parent_id = $_POST['parent_id'];
             $array1 = $this->model->guestbookAction($author, $text, $parent_id);
-           // var_dump($array1);
             $this->view->getComment($array1);
         }
     }

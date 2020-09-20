@@ -63,17 +63,5 @@ class Guest extends Model {
         return $items2;
     }
 
-//    function getComment ($row) {
-//        $parent_id_value=$row['id'];
-//        $res = mysqli_query("SELECT * FROM comments where parent_id=".$row['comment_id']);
-//        global $i;
-//        $i++;
-//            if (mysqli_num_rows($res) > 0) {
-//
-//                while ($res1 = mysqli_fetch_assoc($res)&& $i<3){
-//                    $this->getComment($res1);
-//                }
-//            $i--;
-//        }
-//    }
+
 }
