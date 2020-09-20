@@ -16,6 +16,16 @@ class Guest extends Model {
         $stmt->bindParam(':parent_id', $parent_id, \PDO::PARAM_STR);
         $stmt->execute();
 
+        $stmt = $this->db->prepare("SELECT * FROM `comments` WHERE `author` = :author and `text` = :text and `parent_id`= :parent_id");
+
+        $stmt->bindParam(':author', $author, \PDO::PARAM_STR);
+        $stmt->bindParam(':text', $text, \PDO::PARAM_STR);
+        $stmt->bindParam(':parent_id', $parent_id, \PDO::PARAM_STR);
+        $stmt->execute();
+
+        $array = $stmt->fetch(\PDO::FETCH_ASSOC);
+        return $array;
+
     }
 
     // Возвращаем все родительские комментарии
@@ -45,7 +55,6 @@ class Guest extends Model {
         $result->bindParam(':parent_id', $parent_id, \PDO::PARAM_STR);
         $result->execute();
         $items2 = $result->fetchAll(\PDO::FETCH_ASSOC);
-
         if (count($items2) > 0) {
             foreach ($items2 as $item2_key => $item2){
                   $items2[$item2_key]["childrens"] = $this->getComment($item2 ['comment_id']);

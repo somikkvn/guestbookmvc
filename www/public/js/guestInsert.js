@@ -1,29 +1,26 @@
-$(document).ready(function () {
-    $('#comment_from').on("click", function (event) {
+$(document).on('click', 'button', function (event){
         event.preventDefault();
-
+        let id = $(this).attr('id');
         let request3 = {
-            author: $("#author").val(),
-            text: $("#text").val(),
-            parent_id: $("#parent_id").val(),
+            author: $("#author"+id).val(),
+            text: $("#text"+id).val(),
+            parent_id: $("#parent_id"+id).val(),
         }
-        console.log(request3);
-        // if ( request3['author'] === "" && request3['text'] === "")
-        // {
-        //    alert('Заполните все поля!');
-        //
-        // }
+         console.log(request3);
+
         $.ajax({
-            url: '/guestbook',
+            url: '/guest',
             type: "POST",
             data: (request3),
-            dataType: "json",
+            dataType: "html",
             success: function (response3) {
-
-                console.log(response3);
+               // console.log(response3);
+                $('#comment'+id).append(response3);
+                $("#author"+id).val('');
+                $("#text"+id).val('');
 
             }
         })
 
     });
-});
+

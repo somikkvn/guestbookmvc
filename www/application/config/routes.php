@@ -14,6 +14,10 @@ return [
 		'controller' => 'main',
 		'action' => 'register',
 	],
+    'guest' => [
+        'controller' => 'guest',
+        'action' => 'guest',
+    ],
     'logout' => [
         'controller' => 'main',
         'action' => 'logout',

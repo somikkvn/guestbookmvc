@@ -46,4 +46,15 @@ class View {
 		exit(json_encode(['url' => $url]));
 	}
 
+    public function getComment($arr = [])
+    {
+        extract($arr);
+        ob_start();
+       if(file_exists('application/views/guest/guestComment.php')){
+            require 'application/views/guest/guestComment.php';
+       }
+        $arr = ob_get_contents();
+
+    }
+
 }

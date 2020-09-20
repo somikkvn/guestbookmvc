@@ -1,16 +1,16 @@
 <h2 align="center">Guest book</h2>
 <div class="form-group">
     <?php if (!empty($_SESSION["id"])) : ?>
-        <form id="comment_from">
+
             <p><br>
-                <input type="text" id="author" class="form-control" placeholder="Your name:"
+                <input type="text" id="author0" class="form-control" placeholder="Your name:"
                        value="<?php echo(!empty($_POST['author']) ? $_POST['author'] : ''); ?>"/>
             <p><br>
-                <textarea id="text" class="form-control" placeholder="Comment:"
+                <textarea id="text0" class="form-control" placeholder="Comment:"
                           value="<?php echo(!empty($_POST['text']) ? $_POST['text'] : ''); ?>"></textarea></p>
-            <input type="hidden" id="parent_id" value="0"/>
-            <p><input class="btn btn-default" type="submit" name="submit" class="btn btn-secondary" value="Submit"/></p>
-        </form>
+            <input type="hidden" id="parent_id0" value="0"/>
+        <p><button class="btn btn-default" type="submit" id="0" name="submit" class="btn btn-secondary" >Submit</button></p>
+
     <?php else: ?>
 </div>
 <div class="form">
@@ -52,6 +52,7 @@
         ?>
     </ul>
 </nav>
+<div id="comment0"> </div>
 
 <?php
 if (!empty($items)) {
@@ -62,15 +63,16 @@ if (!empty($items)) {
         <?php echo "Comment:" . ' ' . $item['text']; ?>
 
         <?php if (!empty($_SESSION["id"])) : ?>
-            <form id="comment_from2">
-                <input type="text" id="author2" class="form-control" placeholder="Your name:"
+
+                <input type="text" id="author<?php echo $item['comment_id']; ?>" class="form-control" placeholder="Your name:"
                        value="<?php echo(!empty($_POST['author']) ? $_POST['author'] : ''); ?>"/>
                 <br>
-                <textarea id="text2" class="form-control" placeholder="Comment:"
+                <textarea id="text<?php echo $item['comment_id']; ?>" class="form-control" placeholder="Comment:"
                           value="<?php echo(!empty($_POST['text']) ? $_POST['text'] : ''); ?>"></textarea></p>
-                <input type="hidden" id="parent_id2" value="<?php echo($item['comment_id']); ?>"/>
-                <p><input class="btn btn-default" type="submit" name="submit" class="btn btn-secondary" value="Submit"/></p>
-            </form>
+                <input type="hidden" id="parent_id<?php echo $item['comment_id']; ?>" value="<?php echo($item['comment_id']); ?>"/>
+                <p><button id="<?php echo $item['comment_id']; ?>" class="btn btn-default" type="submit" name="submit" class="btn btn-secondary" value="Submit">Submit</button></p>
+
+
         <?php else: ?>
             <div class="form">
                 <a href="\login">To reply to a comment, you need to log in</a>
@@ -78,7 +80,7 @@ if (!empty($items)) {
             </div>
         <?php endif; ?>
 
-
+ <ul><div id="comment<?php echo $item['comment_id']; ?>"> </div></ul>
         <?php
         if (!empty($item['childrens'])) {
             foreach ($item['childrens'] as $item2) { ?>
@@ -89,15 +91,15 @@ if (!empty($items)) {
                     <?php echo "Comment:" . ' ' . $item2['text']; ?>
 
                     <?php if (!empty($_SESSION["id"])) : ?>
-                        <form id="comment_from3">
-                            <input type="text" id="author3" class="form-control" placeholder="Your name:"
+
+                            <input type="text" id="author<?php echo $item2['comment_id']; ?>" class="form-control" placeholder="Your name:"
                                    value="<?php echo(!empty($_POST['author']) ? $_POST['author'] : ''); ?>"/>
-                            <br><textarea id="text3" class="form-control" placeholder="Comment:"
+                            <br><textarea id="text<?php echo $item2['comment_id']; ?>" class="form-control" placeholder="Comment:"
                                           value="<?php echo(!empty($_POST['text']) ? $_POST['text'] : ''); ?>"></textarea>
                             </p>
-                            <input type="hidden" id="parent_id3" value="<?php echo($item2['parent_id']); ?>"/>
-                            <p><input class="btn btn-default" type="submit" name="submit" class="btn btn-secondary" value="Submit"/></p>
-                        </form>
+                            <input type="hidden" id="parent_id<?php echo $item2['comment_id']; ?>" value="<?php echo($item2['parent_id']); ?>"/>
+                            <p> <button id="<?php echo $item2['comment_id']; ?>" class="btn btn-default" type="submit" name="submit" class="btn btn-secondary" value="Submit">Submit</button></p>
+
                     <?php else: ?>
                         <div class="form">
                             <a href="\login">To reply to a comment, you need to log in</a>
@@ -105,6 +107,7 @@ if (!empty($items)) {
                         </div>
                     <?php endif; ?>
                 </ul>
+                <ul><div id="comment<?php echo $item2['comment_id']; ?>"> </div></ul>
 
             <?php }
         }
